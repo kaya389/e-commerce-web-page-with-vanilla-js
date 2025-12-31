@@ -1,0 +1,530 @@
+/*page active/passive*/
+.page{
+    display: none;
+}
+.page.active{
+    display:block;
+}
+body{
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+/**/
+
+.orders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding-right: 60px;
+}
+
+/*navbar*/
+.navbar{
+    transform: translateY(-10px);
+    position: fixed;
+    width: 100%;
+    background-color: rgb(3, 3, 78);
+    z-index: 1000;
+    height: 65px;
+    display: flex;
+}
+nav{
+    transform: translateY(2px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.logo, .search-container, .orders, .cart{
+    margin-right: 5px;
+}
+
+/*amazon logo*/
+.logo{
+    transform: translateY(4px);
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    .logo{
+        content: url('small_logo.png');
+        width: 35px;
+        height: 35px;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 15px;
+    }
+    .navbar{
+        height: 60px;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .cart-logo-container{
+        content: url('amazon-mobile-logo.png');
+        height: 30px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+}
+
+/*search*/
+
+input:focus{
+    outline: none;
+    box-shadow: rgb(232, 171, 79);
+}
+.search-container-2{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(232, 171, 79);
+    transform: translateY(1px);
+    border-radius: 6px;
+}
+.search-container{
+    display: flex;
+    height: 38px;
+    align-items: center;
+    overflow: hidden;
+}
+.search-bar{
+    flex: 1;
+    border: none;
+    margin: 0;
+    width: 100vh;
+    height: 280px;
+}
+.buyutec{
+    background-color: rgb(232, 171, 79);
+    height: 28px;
+    padding-left: 8px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+/*cart & orders*/
+.open-menu{
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu{
+    background-color: rgb(3, 3, 78);
+    border: none;
+    width: 40px;
+    cursor: pointer;
+}
+.cart-order{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
+.cart-size{
+    text-decoration: none;
+    outline: none;
+    transform: translateY(1px);
+    font-size: 15px;
+    background-image: url(cart.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.orders{
+    text-decoration: none;
+    outline: none;
+    font-size: 15px;
+    transform: translateY(px)
+}
+/**/
+
+/*içerikler*/
+.icerikler{
+    padding-top: 60px;
+}
+/**/
+
+/*anasayfa*/
+.active#anasayfa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0px;
+    height: 100%;
+    overflow-x: hidden;
+}
+.urun{
+    overflow-x: hidden;
+    display: grid;
+    flex-direction: column;
+    border: 0.1px solid rgb(213, 213, 213);
+    padding: 0px;
+    height: 400px;
+    border-collapse: collapse;
+}
+.urun-adi{
+    margin-bottom: auto;
+    padding-left: 5px;
+}
+.urun-foto{
+    height: 160px;
+    padding-top: 10px;
+}
+.foto-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star-container{
+    position: relative;
+    width: 100px;
+    height: 25px;
+    overflow: hidden;
+    
+}
+.star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(star.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.star-filled{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url(star-filled.png);
+    background-size: 100px 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+.star-price{
+    margin-top: auto;
+    padding-left: 5px;
+    padding-top: 0px;
+}
+.s-a-n{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.add-cart-button{
+    height: 30px;
+    width: 200px;
+    background-color: yellow;
+    border: none;
+    border-radius: 40px;
+}
+.add-to-cart{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.add-to-cart1, .add-to-cart6,
+.add-to-cart9, .add-to-cart11,
+.add-to-cart16, .add-to-cart21,
+.add-to-cart23, .add-to-cart24,
+.add-to-cart30, .add-to-cart33,
+.add-to-cart34, .add-to-cart35,
+.add-to-cart36, .add-to-cart40,
+.add-to-cart41, .add-to-cart42
+{
+    padding-bottom: 3px;
+}
+.add-to-cart5{
+    padding-right: 100px;
+}
+.add-to-cart10, .add-to-cart18,
+.add-to-cart30{
+    padding-right: 30px;
+}
+.add-to-cart13, .add-to-cart19{
+    padding-right: 50px;
+}
+.add-to-cart21{
+    padding-right: 10px;
+}
+.add-to-cart22{
+    padding-right: 60px;
+}
+/***************************/
+
+/******************CART**********/
+.checkout-x-times a{
+    color:blue;
+}
+
+.cart-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+.amazon-cart-logo{
+    width: 100px;
+    padding-left: 20px;
+}
+.checkout-lock-icon{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.checkout-x-times{
+    padding-bottom: 20px;
+}
+
+.ana-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.odeme{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px grey solid;
+    border-bottom: none;
+}
+.odeme-sonuc{
+    padding-top: 70px;
+    padding-left: 290px;
+}
+.odeme-detay{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.view-products{
+    color: black;
+    background-color: yellow;
+    width: 140px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 70px;
+    transform: translateY(10px);
+}
+.place-order-at-cart{
+    color:black;
+    width: 450px;
+    border: 1px gray solid;
+    border-top: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+}
+.place-order-at-cart2{
+    color: black;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: yellow;
+    border-radius: 100px;
+}
+
+.alinacak-urun-div{
+    transform: translateY(20px);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px grey solid;
+}
+.foto-detay{
+    display: flex;
+    flex-direction: row;
+}
+.alinacak-urun-detay{
+    transform: translateY(-20px);
+}
+.alinacak-urun-adet-sil-ekle{
+    display: flex;
+    flex-direction: row;
+}
+.alinacak-urun-foto{
+    height: 150px;
+}
+.update-sil{
+    height: 30px;
+    padding: 10px;
+    transform: translateY(9px);
+    display: flex;
+    flex-direction: row;
+}
+.update-button, .delete-button{
+    color: blue;
+    background-color: white;
+    border: none;
+}
+.teslim{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+/**/
+
+/**************KARGO TAKİP*/
+.alinmis-urunler{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+    width: 450px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.alinmis-urunler-bilgi{
+    padding-top: 10px;
+    font-weight: bold;
+    background-color: rgb(190, 187, 187);
+    padding-left: 10px;
+    border: rgb(190, 187, 187) 1px solid;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.alinmis-urunler-foto-vs{
+    padding-left: 5px;
+    border: rgb(190, 187, 187) 1px solid;
+    border-top: none;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+.alinmis-urun-foto{
+    height: 250px;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+.alinacak-urun-foto{
+    height: 200px;
+}
+.alinmis-urun-isim-vs{
+    gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.tekrar-sepete-ekle{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: none;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-right: 100px;
+    background-color: orange;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+.kargo-durumu-gözle{
+    background-color: aliceblue;
+    width: 120px;
+    height: 30px;
+    border: rgb(190, 187, 187) 1px solid;
+    height: 30px;
+    border-radius: 10px;
+}
+.buy-again-png{
+    height: 25px;
+}
+.buy-it-again-text{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.order-placed{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+.track-package{
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 20px;
+    width: 400px;
+}
+.view-your-all-orders{
+    color: blue;
+}
+.preparing-shipped-delivered{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    bottom: 0px;
+}
+.track-durumu{
+    background-image: url("green.jpg");
+    width: 100px;
+    border: rgb(190, 187, 187) 1px solid;
+    border-radius: 10px;
+    height: 20px;
+    transform: translateY(-60px);
+}
+.p-s-dcontainer{
+    width: 480px;
+    border: rgb(190, 187, 187) 1px solid;
+    border-radius: 10px;
+    height: 20px;
+    transform: translateY(-17px);
+    z-index: 999;
+}
+.track-surec{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.track-foto{
+    height: 200px;
+}
+/**/

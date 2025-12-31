@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>x</title>
+        <link rel="stylesheet" href="amazon.css">
+    </head>
+
+    <body>
+        <!----NAV-->
+        <div class="navbar">
+            <nav>
+                <a href="#anasayfa">
+                    <img src="logo.png" class="logo">
+                </a>
+                <div class="search-container-2"><div class="search-container">
+                    <input class="search-bar" placeholder="search">
+                    <a href="#anasayfa">
+                        <img src="buyutec.png" class="buyutec">
+                    </a>
+                </div></div>
+                <div class="cart-order">
+                    <a href="#orders" class="orders"><pre>Returns 
+& Orders</pre></a>
+                    <a href="#cart" class="cart"> <pre class="cart-size">   0
+     Cart</pre>
+                    </a>
+                    <button onclick="menuWork()" class="menu"><img src="menu.png"></button>
+                </div>
+            </nav>
+            <p><div class="open-menu"></div></p>
+        </div>
+        <!------->
+
+        <div class="icerikler">
+
+        <!-------ANASAYFA-->
+            <div class="page active anasayfa" id="anasayfa">
+                
+            </div>
+        <!--------->
+        
+        <!--------------SEARCH-->
+            <div class="page" id="search">
+                search page
+            </div>
+        <!------------------->
+
+        <!---------ORDERS------>
+            <div class="page " id="orders">
+                <div class="orders">
+                    <div class="alinmis-urunler">
+                        <br>
+                        Your Orders
+                    </div>
+                    <div class="track-package">
+                </div>
+                    
+                </div>
+            </div>
+        <!------------------------>
+
+        <!---------------CART-->
+            <div class="page" id="cart">
+                <div class="cart-nav">
+                    <a href="#anasayfa">
+                        <div class="cart-logo-container">
+                            <img src="amazon-cart-logo.png" class="amazon-cart-logo">
+                        </div>
+                    </a>
+                    <div class="checkout-x-times">Checkout
+                        <a href="#anasayfa" class="co-x-t">(0 items)</a>
+                    </div>
+                    <img src="checkout-lock-icon.png" class="checkout-lock-icon">
+                </div>
+                <div class="ana-cart">
+                    <b>Review your order</b>
+                    <div class="odeme">
+                        <div class="odeme-detay">
+                            <p><b>Order Summary</b></p>
+                            <p class="items-at-cart">Items(0):</p>
+                            <p>Shipping & handling:</p>
+                            <p></p>
+                            <p>Total before tax:</p>
+                            <p>Estimated tax(10%)</p>
+                            <p></p>
+                            <p>Order Total</p>
+                        </div>
+                        <div class="odeme-sonuc">
+                            <pre class="hesaplamalar">$0.00
+                                
+    
+$0.00
+                            
+
+
+$0.00
+
+
+$0.00
+
+
+$0.00</pre>         
+                        </div>
+                    </div>
+                    <div class="place-order-at-cart">
+                        <a href="#orders" onclick="kargoTakipYonlendir()" class="place-order-at-cart2">Place your order</a>
+                    </div>
+                    <div class="bos-sepet">
+                        Your cart is empty
+                        <a href="#anasayfa" class="view-products">View products</a>
+                    </div>
+                    <div class="alinacak-urun"></div>
+                </div>
+            </div>
+        </div>
+        <!------------------->
+        
+
+        <script type="module" src="amazon.js"></script>
+    </body>
+</html>
